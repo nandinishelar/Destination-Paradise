@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your Destination</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(to left, #09c5d3, #6c76cf);
+    }
+
+    #bookingForm {
+        background-color: rgb(19, 18, 18);
+        padding: 20px;
+        /* Add some padding for spacing */
+        border-radius: 8px;
+        /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow for depth */
+        max-width: 400px;
+        /* Limit the width of the form */
+        margin: 50px auto;
+        /* Center the form horizontally */
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        /* Add spacing between inputs */
+    }
+
+    input,
+    select,
+    button {
+        padding: 7px;
+        margin: 0;
+        /* Remove margin for better alignment */
+        display: inline-block;
+        /* vertical-align: middle; */
+        width: 220px;
+        /* margin: 10px 0 0 auto; Align to the right */
+        /* align-self: flex-end; Ensure alignment within the flex container */
+    }
+
+    label {
+        font-weight: bold;
+        /* Make the text bold */
+        color: rgb(255, 255, 255);
+        /* Set the text color to white */
+        padding: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 170px;
+        margin: 0 0 0 0;
+    }
+
+    button {
+        margin-top: 10px;
+        background-color: aqua;
+        align-self: center;
+    }
+</style>
+
+<body>
+    <form action="" id="bookingForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name">
+        <label for="email">Email Id</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+        <label for="countryCode">Country</label>
+        <select class="form-select" id="countryCode" name="countryCode" required>
+            <option value="US">United States</option>
+            <option value="IN">India</option>
+            <option value="GB">United Kingdom</option>
+            <option value="CA">Canada</option>
+            <option value="AU">Australia</option>
+            <option value="DE">Germany</option>
+            <option value="FR">France</option>
+            <option value="JP">Japan</option>
+            <option value="CN">China</option>
+            <option value="BR">Brazil</option>
+        </select>
+        <label for="phone">Contact no.</label>
+        <input type="number" id="phone" name="phone" required placeholder="Contact number">
+        <label for="birthday">Date of Birth</label>
+        <input type="date" id="birthday" name="birthday" required placeholder="Your Birth date">
+        <label for="maritalStatus">Marital status</label>
+        <select name="maritalStatus" id="maritalStatus" class="form-select" required>
+            <option value="married">married</option>
+            <option value="un">Unmarried</option>
+        </select>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
